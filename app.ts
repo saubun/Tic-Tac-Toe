@@ -1,13 +1,24 @@
 // Lets us check all boxes
+let isPlayerOnesTurn = false;
 for (let i = 1; i <= 3; i++) {
-	document.getElementById(`tr-${i}`).childNodes.forEach((child: any) => {
-		let squareIsChecked = false;
+	document.querySelectorAll('td').forEach((child: HTMLElement) => {
 		child.addEventListener('click', () => {
-			squareIsChecked = !squareIsChecked;
-			if (squareIsChecked) {
+			// Check the player's box and assign class name
+			if (child.className === 'grey') {
+				child.style.backgroundColor = 'grey';
+				isPlayerOnesTurn = !isPlayerOnesTurn;
+			} else if (child.className === 'black') {
 				child.style.backgroundColor = 'black';
+				isPlayerOnesTurn = !isPlayerOnesTurn;
 			} else {
-				child.style.backgroundColor = 'white';
+				isPlayerOnesTurn ? (child.className = 'black') : (child.className = 'grey');
+				if (child.className === 'grey') {
+					child.style.backgroundColor = 'grey';
+					isPlayerOnesTurn = !isPlayerOnesTurn;
+				} else if (child.className === 'black') {
+					child.style.backgroundColor = 'black';
+					isPlayerOnesTurn = !isPlayerOnesTurn;
+				}
 			}
 		});
 	});
