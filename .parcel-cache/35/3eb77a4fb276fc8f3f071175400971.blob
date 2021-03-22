@@ -1,2 +1,0 @@
-const square1 = document.getElementById('tr-1').children[0];
-square1.addEventListener('click', () => {});
