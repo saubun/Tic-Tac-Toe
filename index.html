@@ -4,41 +4,49 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Tic Tac Toe</title>
 		<style>
-			table {
-				border: 1px solid black;
+			body {
+				font-family: 'Arial', sans-serif;
 			}
-			table tr {
-				border: 1px solid black;
-				height: 5rem;
-				width: auto;
+			section {
+				text-align: center;
 			}
-			table tr td {
-				border: 1px solid black;
-				width: 5rem;
-				background-color: white;
+			.game--container {
+				display: grid;
+				grid-template-columns: repeat(3, auto);
+				width: 306px;
+				margin: 50px auto;
+			}
+			.cell {
+				font-family: 'Permanent Marker', cursive;
+				width: 100px;
+				height: 100px;
+				box-shadow: 0 0 0 1px #333333;
+				border: 1px solid #333333;
+				cursor: pointer;
+				line-height: 100px;
+				font-size: 60px;
 			}
 		</style>
 	</head>
 	<body>
-		<table id="table">
-			<tr id="tr-1">
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr id="tr-2">
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr id="tr-3">
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
+		<section>
+			<h1 class="game--title">Tic Tac Toe</h1>
+			<div class="game--container">
+				<div data-cell-index="0" class="cell"></div>
+				<div data-cell-index="1" class="cell"></div>
+				<div data-cell-index="2" class="cell"></div>
+				<div data-cell-index="3" class="cell"></div>
+				<div data-cell-index="4" class="cell"></div>
+				<div data-cell-index="5" class="cell"></div>
+				<div data-cell-index="6" class="cell"></div>
+				<div data-cell-index="7" class="cell"></div>
+				<div data-cell-index="8" class="cell"></div>
+			</div>
+			<h2 class="game--status"></h2>
+			<button class="game--restart">Restart Game</button>
+		</section>
 		<script src="app.ts"></script>
 	</body>
 </html>
