@@ -1,0 +1,11 @@
+document.getElementById('tr-1').childNodes.forEach(child => {
+  let squareIsChecked = false;
+  child.addEventListener('click', () => {
+    squareIsChecked = !squareIsChecked;
+    if (squareIsChecked) {
+      child.style.backgroundColor = 'black';
+    } else {
+      child.style.backgroundColor = 'white';
+    }
+  });
+});

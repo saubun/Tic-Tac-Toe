@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style data-parcel-key="cdd1baffece2cf6c5cd3938a844e31ad">
+			table {
+				border: 1px solid black;
+			}
+			table tr {
+				border: 1px solid black;
+				height: 5rem;
+				width: auto;
+			}
+			table tr td {
+				border: 1px solid black;
+				width: 5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<table id="table">
+			<tr id="tr-1">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="tr-2">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr id="tr-3">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<script src="8d935c88624ece56639078fce393fb53"></script>
+	</body>
+</html>

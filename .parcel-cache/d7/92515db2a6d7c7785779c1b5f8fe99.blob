@@ -1,0 +1,10 @@
+const square1 = document.getElementById('tr-1').children[0];
+let sqaureOneIsChecked = false;
+square1.addEventListener('click', () => {
+  sqaureOneIsChecked = !sqaureOneIsChecked;
+  if (sqaureOneIsChecked) {
+    square1.style.backgroundColor = 'black';
+  } else {
+    square1.style.backgroundColor = 'white';
+  }
+});

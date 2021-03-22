@@ -1,0 +1,13 @@
+{
+  "name": "vanilla-todo-list",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "rm -rf dist/* && parcel build index.html"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}
